@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 
 @Entity
-@Data // Generates getters/setters including getPassword()
 @NoArgsConstructor
 @AllArgsConstructor
 public class Employee {

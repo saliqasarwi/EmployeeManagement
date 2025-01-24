@@ -40,8 +40,7 @@ public class AdminController {
     }
 
     @PostMapping("/employees/{id}")
-    public String updateEmployee(@PathVariable Long id,
-                                 @ModelAttribute("employee") Employee employee) {
+    public String updateEmployee(@PathVariable Long id, @ModelAttribute("employee") Employee employee) {
         employeeService.updateEmployee(id, employee);
         return "redirect:/admin/employees";
     }
